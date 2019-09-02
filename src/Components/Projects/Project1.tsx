@@ -73,8 +73,18 @@ const Project1 = () => {
             </div>
           </div>
         </div>
-        <CustomCard2 />
       </div>
+      <iframe
+        src={
+          "https://appetize.io/embed/rv441pymkgjgv7tv00ywbrxnb8?device=iphonex&scale=50&autoplay=false&orientation=portrait&deviceColor=white"
+        }
+        style={{
+          width: 208,
+          height: 435
+        }}
+        scrolling="no"
+        frameBorder="0"
+      />
     </Timeline.Item>
   );
 };

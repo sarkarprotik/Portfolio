@@ -69,6 +69,7 @@ const Project2 = () => {
                 <Tag color="#1DA57A">Node.js</Tag>
                 <Tag color="green">Expo</Tag>
               </div>
+              <div></div>
             </div>
           </div>
         </div>
