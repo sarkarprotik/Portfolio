@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Typography } from "antd";
+import { Typography, Tag } from "antd";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 
 const AboutMe = () => {
   const [text, setText] = useState("This is a descriptiona about me");
@@ -11,10 +11,14 @@ const AboutMe = () => {
   };
   return (
     <div>
-      <Title style={{ color: "white" }} level={2}>
-        This is me
-      </Title>
       <div>
+        <Title style={{ color: "#1DA57A" }} level={2}>
+          Who I am
+        </Title>
+        <Title style={{ color: "lightgrey" }} level={4}>
+          Just Hit Play <br></br>
+        </Title>
+
         <Title style={{ color: "lightgrey" }} level={4}>
           <div
             style={{
@@ -32,20 +36,19 @@ const AboutMe = () => {
               style={{
                 width: 700,
                 height: 400,
+                marginBottom: 20,
                 justifySelf: "center"
               }}
             />
-          </div>
-          Hi I am Protik Sarkar and I am based in Stockhom, Sweden. <br></br>
+          </div>{" "}
           <br></br>
-          Below is a short intro of me. Just Hit Play <br></br>
-          <br></br>I build this page so that you as the decision maker can make
-          a better judgement of me and my work.
+          What do I want? <br></br>
+          <br></br>I am looking for a new team, a family to work with in order
+          to kick start my career as a
+          <Text style={{ color: "#1DA57A" }} code>
+            Full Stack Developer
+          </Text>
           <br></br>
-          <br></br>
-          It contains different components that create the above introduction
-          "formula," which you can refer to that when you get stuck with your
-          own. Below, we've gone into more detail on each component.
         </Title>
       </div>
     </div>

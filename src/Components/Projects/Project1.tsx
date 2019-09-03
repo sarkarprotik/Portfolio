@@ -2,11 +2,19 @@ import React from "react";
 import { Timeline, Typography } from "antd";
 import { Tag } from "antd";
 import CustomCard2 from "../CustomCard2/CustomCard2";
+import { Carousel, Button } from "antd";
 const { Title } = Typography;
 
 const Project1 = () => {
-  const viewCode = "View <Code />";
-
+  const onClick = () => {
+    const url =
+      "https://appetize.io/app/rv441pymkgjgv7tv00ywbrxnb8?device=iphone6s&scale=75&orientation=portrait&osVersion=11.4&deviceColor=black";
+    window.open(url, "_blank");
+  };
+  const handleClick = () => {
+    const url = "https://github.com/sarkarprotik/IGClone";
+    window.open(url, "_blank");
+  };
   return (
     <Timeline.Item>
       <h2 style={{ fontSize: "bold", color: "#1DA57A" }}>Instagram Clone</h2>
@@ -33,58 +41,73 @@ const Project1 = () => {
             <div>
               <Title
                 style={{ color: "lightgrey" }}
-                ellipsis={{ rows: 5, expandable: true }}
+                ellipsis={{ rows: 14, expandable: true }}
                 level={4}
               >
-                To write an introduction, be mindful of what it's supposed to
-                achieve. The main goals here are to draw in your reader -- a
-                relative stranger, most of the time -- and concisely let her
-                know what the article is about. Generally, that consists of
-                three key components: <br></br>
+                This is my attempt at building an Instagram Clone <br></br>
                 <br></br>
-                Step 1 Grab the reader's attention. That looks different for
-                every piece of writing, but we've provided some suggestions
-                below. <br></br>
+                The main focus of this application is to prototype a gloridied,
+                To-Do app. The project was built using expo SDK for rapid
+                Prototyping below. <br></br>
                 <br></br>
-                Step 2 Present the reason for the post's existence. <br></br>
+                Once the basic components were laid out, then native code the
+                iOS platform was built using react-native.<br></br>
                 <br></br>
-                Step 3 Explain how the post will help address the problem that
-                brought your reader to it. As a lover of all things meta, I
-                will, of course, use this post's introduction as an example of
-                how to write an intro.
+                To present the Project Appetize.io was used and apk file was
+                uploaded to their servers in order to view the project.
                 <br></br>
                 <br></br>
-                It contains different components that create the above
-                introduction "formula," which you can refer to that when you get
-                stuck with your own. Below, we've gone into more detail on each
-                component.
+                The next phase would be to build a backend with user
+                authentication using AWS IAM services and a GraphQL api service
+                to retrieve data
+                <br></br>
+                <br></br>
               </Title>
             </div>
             <div>
-              <h4 style={{ marginBottom: 16, color: "white" }}>Technologies</h4>
-              <div>
+              <h4
+                style={{
+                  marginBottom: 16,
+                  color: "white"
+                }}
+              >
+                Technologies
+              </h4>
+              <div style={{ display: "flex", flexDirection: "row" }}>
                 <Tag color="green">React-Native</Tag>
                 <Tag color="green">Material-UI</Tag>
                 <Tag color="green">TypeScript</Tag>
                 <Tag color="green">Node.js</Tag>
-                <Tag color="#1DA57A"> {viewCode}</Tag>
                 <Tag color="green">Expo</Tag>
+                <Tag color="green">Appetize</Tag>
+                <div onClick={() => handleClick()}>
+                  <Tag color="#1EA57A">View Code</Tag>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <iframe
+            src={
+              "https://appetize.io/embed/rv441pymkgjgv7tv00ywbrxnb8?device=iphonex&scale=50&autoplay=false&orientation=portrait&deviceColor=black"
+            }
+            style={{
+              width: 208,
+              height: 435
+            }}
+            scrolling="no"
+            frameBorder="0"
+          />
+          <Button
+            style={{ width: "100%" }}
+            onClick={() => onClick()}
+            type="primary"
+          >
+            View Project
+          </Button>
+        </div>
       </div>
-      <iframe
-        src={
-          "https://appetize.io/embed/rv441pymkgjgv7tv00ywbrxnb8?device=iphonex&scale=50&autoplay=false&orientation=portrait&deviceColor=white"
-        }
-        style={{
-          width: 208,
-          height: 435
-        }}
-        scrolling="no"
-        frameBorder="0"
-      />
     </Timeline.Item>
   );
 };

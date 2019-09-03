@@ -10,19 +10,10 @@ import Portfolio from "./Portfolio";
 
 import AboutMe from "./AboutMe";
 
+import ContactMe from "./ContactMe";
+
 const { Sider } = Layout;
 const { SubMenu } = Menu;
-
-const ContactMe = () => {
-  return <div>Contact Me</div>;
-};
-
-const Project1 = () => {
-  return <div>Project1</div>;
-};
-const Project2 = () => {
-  return <div>Project2</div>;
-};
 
 const Profile = ({ collapsed }: any) => {
   let size = 150;
@@ -90,7 +81,7 @@ const SidebarLayout = () => {
   return (
     <Layout style={{ minHeight: "100vh", backgroundColor: "#011c38" }}>
       <Sider
-        width={400}
+        width={300}
         collapsible
         collapsed={collapsed}
         onCollapse={onCollapse}
@@ -103,35 +94,29 @@ const SidebarLayout = () => {
             }}
             key="1"
           >
-            <Icon type="folder" />
+            <Icon type="user" />
             <span>About Me</span>
           </Menu.Item>
 
           <Menu.Item
             onClick={() => {
               setWhatToShow(<Portfolio />);
+              setCollapsed(true);
             }}
             key="8"
           >
-            <Icon type="folder" />
+            <Icon type="code" />
             <span>Portfolio</span>
           </Menu.Item>
-          <SubMenu
-            key="sub1"
-            title={
-              <span>
-                <Icon type="user" />
-                <span>Contact Me</span>
-              </span>
-            }
+          <Menu.Item
+            onClick={() => {
+              setWhatToShow(<ContactMe />);
+            }}
+            key="3"
           >
-            <Menu.Item onClick={() => setWhatToShow(<Project1 />)} key="3">
-              Email
-            </Menu.Item>
-            <Menu.Item onClick={() => setWhatToShow(<Project2 />)} key="4">
-              Call
-            </Menu.Item>
-          </SubMenu>
+            <Icon type="message" />
+            <span>Contact Me</span>
+          </Menu.Item>
         </Menu>
       </Sider>
       <CustomContent whatToShow={whatToShow} />

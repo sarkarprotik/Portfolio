@@ -1,9 +1,8 @@
 import React from "react";
-import { Typography, Carousel } from "antd";
-import { Timeline, Icon } from "antd";
+import { Typography } from "antd";
+import { Timeline } from "antd";
 import { Card } from "antd";
 
-import CustomCard2 from "./CustomCard2/CustomCard2";
 import Project1 from "./Projects/Project1";
 import Project2 from "./Projects/Project2";
 import Project3 from "./Projects/Project3";
@@ -37,9 +36,6 @@ const Portfolio = () => {
         <Project2 />
         <Project3 />
         <Project4 />
-        <Timeline.Item></Timeline.Item>
-        <Timeline.Item>Salt Admin</Timeline.Item>
-        <Timeline.Item>Simple To-Do App</Timeline.Item>
       </Timeline>
     </>
   );

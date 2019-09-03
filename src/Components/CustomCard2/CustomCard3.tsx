@@ -4,9 +4,9 @@ import { Carousel, Button } from "antd";
 
 import "./styles.css";
 
-const CustomCard2 = () => {
+const CustomCard3 = () => {
   const onClick = () => {
-    const url = "https://www.happyx.se";
+    const url = "https://www.aquariumponics.com";
     window.open(url, "_blank");
   };
 
@@ -14,16 +14,14 @@ const CustomCard2 = () => {
     <div
       style={{
         maxWidth: 220,
-
         justifyItems: "space-evenly"
       }}
     >
       <div>
         <Carousel autoplay>
-          <img src={require("../../assets/hx2.png")} />
-          <img src={require("../../assets/hx3.png")} />
-          <img src={require("../../assets/hx4.png")} />
-          <img src={require("../../assets/hx5.png")} />
+          <img src={require("../../assets/wix1.png")} />
+          <img src={require("../../assets/wix2.png")} />
+          <img src={require("../../assets/wix3.png")} />
         </Carousel>
       </div>
       <div
@@ -48,4 +46,4 @@ const CustomCard2 = () => {
   );
 };
 
-export default CustomCard2;
+export default CustomCard3;

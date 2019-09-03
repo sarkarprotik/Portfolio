@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
   setTimeout(() => {
     setShowThis(<SidebarLayout />);
-  }, 500);
+  }, 1000);
   return <div>{showThis}</div>;
 };
 export default App;

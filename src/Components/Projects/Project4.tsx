@@ -1,13 +1,17 @@
 import React from "react";
 import { Timeline, Typography } from "antd";
-import { Tag } from "antd";
+import { Tag, Button } from "antd";
 import CustomCard2 from "../CustomCard2/CustomCard2";
 const { Title } = Typography;
 
 const Project4 = () => {
+  const onClick = () => {
+    const url = "https://salt-admin.herokuapp.com";
+    window.open(url, "_blank");
+  };
   return (
     <Timeline.Item>
-      <h2 style={{ fontSize: "bold", color: "#1DA57A" }}>Web Shop</h2>
+      <h2 style={{ fontSize: "bold", color: "#1DA57A" }}>Admin Panel</h2>
       <div
         style={{
           width: "100%",
@@ -16,7 +20,27 @@ const Project4 = () => {
           justifyContent: "center"
         }}
       >
-        <CustomCard2 />
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <iframe
+            src={"https://salt-admin.herokuapp.com"}
+            style={{
+              width: 400,
+              height: 800,
+              zoom: 0.5,
+              paddingBottom: 20,
+              borderRadius: 50
+            }}
+            scrolling="no"
+            frameBorder="0"
+          />
+          <Button
+            style={{ width: "100%" }}
+            onClick={() => onClick()}
+            type="primary"
+          >
+            View Project
+          </Button>
+        </div>
         <div
           style={{
             display: "flex",
@@ -33,42 +57,56 @@ const Project4 = () => {
             <div>
               <Title
                 style={{ color: "lightgrey" }}
-                ellipsis={{ rows: 5, expandable: true }}
+                ellipsis={{ rows: 14, expandable: true }}
                 level={4}
               >
-                To write an introduction, be mindful of what it's supposed to
-                achieve. The main goals here are to draw in your reader -- a
-                relative stranger, most of the time -- and concisely let her
-                know what the article is about. Generally, that consists of
-                three key components: <br></br>
+                <div
+                  style={{
+                    color: "red",
+                    display: "flex",
+                    flexDirection: "column"
+                  }}
+                >
+                  Username: Admin <br></br>Password: secret
+                </div>
+                The first Project I have worked on. The purpose here was the
+                build a fully reactive application that had a seperate front-end
+                and back-end <br></br>
                 <br></br>
-                Step 1 Grab the reader's attention. That looks different for
-                every piece of writing, but we've provided some suggestions
-                below. <br></br>
+                The application is capable of CRUD. Using REST, MongoDB Atlas as
+                the storage of the data.<br></br>
                 <br></br>
-                Step 2 Present the reason for the post's existence. <br></br>
+                This was a well thought out project where I first learned and
+                applied the principals of Agile Methodologies. A full Scrum
+                Board was maintained and the features were build and measured
+                using t shirt sizing <br></br>
                 <br></br>
-                Step 3 Explain how the post will help address the problem that
-                brought your reader to it. As a lover of all things meta, I
-                will, of course, use this post's introduction as an example of
-                how to write an intro.
+                The most import lesson with this project and something that I
+                have taken with me with anything I build now is to spend more
+                time on planning than necessary. As the output of the planning
+                paid heavy dividends. For example, not only were we as a team
+                able to produce the objective outlined but we also managed to
+                add more features, and we had more time than needed.
                 <br></br>
                 <br></br>
-                It contains different components that create the above
-                introduction "formula," which you can refer to that when you get
-                stuck with your own. Below, we've gone into more detail on each
-                component.
+                If i had to re-do this project I would have focused more on the
+                User Interface and general design of the project
               </Title>
             </div>
             <div>
-              <h4 style={{ marginBottom: 16, color: "white" }}>Technologies</h4>
+              <h4 style={{ marginBottom: 16, color: "lightgrey" }}>
+                Technologies
+              </h4>
               <div>
-                <Tag color="green">React-Native</Tag>
-                <Tag color="green">Material-UI</Tag>
-                <Tag color="green">TypeScript</Tag>
-                <Tag color="#1DA57A">Node.js</Tag>
-                <Tag color="green">Expo</Tag>
+                <Tag color="green">Mongo</Tag>
+                <Tag color="green">Context</Tag>
+                <Tag color="green">Express</Tag>
+                <Tag color="green">React</Tag>
+                <Tag color="green">JavaScript</Tag>
+                <Tag color="green">Node.js</Tag>
+                <Tag color="green">Atlas</Tag>
               </div>
+              <div></div>
             </div>
           </div>
         </div>
