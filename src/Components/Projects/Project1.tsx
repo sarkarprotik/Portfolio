@@ -44,9 +44,9 @@ const Project1 = () => {
                 ellipsis={{ rows: 14, expandable: true }}
                 level={4}
               >
-                This is my attempt at building an Instagram Clone <br></br>
+                This is my attempt at building an Instagram Clone<br></br>
                 <br></br>
-                The main focus of this application is to prototype a gloridied,
+                The main focus of this application is to prototype a glorified,
                 To-Do app. The project was built using expo SDK for rapid
                 Prototyping below. <br></br>
                 <br></br>
@@ -59,7 +59,7 @@ const Project1 = () => {
                 <br></br>
                 The next phase would be to build a backend with user
                 authentication using AWS IAM services and a GraphQL api service
-                to retrieve data
+                to retrieve data.
                 <br></br>
                 <br></br>
               </Title>

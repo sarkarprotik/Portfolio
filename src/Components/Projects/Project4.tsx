@@ -70,18 +70,19 @@ const Project4 = () => {
                   Username: Admin <br></br>Password: secret
                 </div>
                 The first Project I have worked on. The purpose here was the
-                build a fully reactive application that had a seperate front-end
-                and back-end <br></br>
+                build a fully reactive application that had a separate front-end
+                and back-end.
+                <br></br>
                 <br></br>
                 The application is capable of CRUD. Using REST, MongoDB Atlas as
                 the storage of the data.<br></br>
                 <br></br>
                 This was a well thought out project where I first learned and
-                applied the principals of Agile Methodologies. A full Scrum
-                Board was maintained and the features were build and measured
-                using t shirt sizing <br></br>
+                applied the principles of Agile Methodologies. A full Scrum
+                Board was maintained and the features were built and measured
+                using T-Shirt sizing <br></br>
                 <br></br>
-                The most import lesson with this project and something that I
+                The most important lesson with this project and something that I
                 have taken with me with anything I build now is to spend more
                 time on planning than necessary. As the output of the planning
                 paid heavy dividends. For example, not only were we as a team
@@ -90,7 +91,7 @@ const Project4 = () => {
                 <br></br>
                 <br></br>
                 If i had to re-do this project I would have focused more on the
-                User Interface and general design of the project
+                User Interface and general design of the project.
               </Title>
             </div>
             <div>

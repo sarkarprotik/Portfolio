@@ -37,14 +37,14 @@ const Project3 = () => {
                 This is the first project that had confirmed my need to learn
                 programming as a skill. In the attempt to build a webshop I
                 noticed while there is a plethora of services available, nothing
-                was able to replicate a custom User Interaction as needed.{" "}
+                was able to replicate a custom User Interaction as needed.
                 <br></br>
                 <br></br>
-                Althouhg I have used an external service to build this site, I
-                learned a lot about Design Thinking principals, which have now
-                translated into my work flow, as this is something that is
-                highly needed by a frontend developer. That is to alwyas keep
-                the user at the forefront when buildin products.<br></br>
+                Although I have used an external service to build this site, I
+                learned a lot about Design Thinking principles, which have now
+                been translated into my workflow, as this is something that is
+                highly needed by a frontend developer. That is to always keep
+                the user at the forefront when building products.<br></br>
                 <br></br>
                 <br></br>
                 <br></br>

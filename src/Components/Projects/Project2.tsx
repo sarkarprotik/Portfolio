@@ -53,8 +53,8 @@ const Project2 = () => {
                 able to get user feedback as soon as possible.
                 <br></br>
                 <br></br>
-                Key learnings on this project was working with multiple
-                developoers pushing code at the same time. In the future a
+                Key learning on this project was working with multiple
+                developers pushing code at the same time. In the future, a
                 planned, collaborated effort would be more efficient, in order
                 to avoid code clash deployment.
               </Title>
